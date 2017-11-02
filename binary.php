@@ -25,6 +25,24 @@ function binary_search($arr,$key){
 	} 
 	return $mid;
 }
+// 非递归
+	function binary_search($arr,$n,$search){
+		$p = 0;
+		$r = $n-1;
+		while($p <= $r){
+			$q = floor(($p+$r)/2);
+			if($arr[$q]  == $search){
+				return $q;break;
+			} else {
+				if($arr[$q] < $search){
+					$p = $q+1;
+				} else {
+					$r=$q-1;
+				}	
+			}
+		}
+		return 'not found';
+	}
 //递归算法
 function binary_search($arr,$key,$f,$t){
 	$floor = $f;
