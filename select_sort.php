@@ -2,28 +2,6 @@
 	
 
 	$arr = [1,23,4,5,71,26,54,79,200,16];
-	/* bubble
-		function bubble($arr){
-
-			if(!is_array($arr)) return false;
-
-			for($i = 0;$i<count($arr);$i++){
-
-				for($j = 0;$j<count($arr)-$i-1;$j++){
-
-					if($arr[$j] < $arr[$j+1]){
-						$tmp = $arr[$j];
-						$arr[$j] = $arr[$j+1];
-						$arr[$j+1] = $tmp;
-					}
-				}
-			}
-
-			return $arr;
-		}
-
-		$new_arr = bubble($arr);
-	*/
 	// select_sort
 	function select_sort($arr){
 		if(!is_array($arr)) return false;
