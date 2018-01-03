@@ -5,13 +5,12 @@
 
 		if(!is_array($arr)) return false;
 
-		for($i = 1; $i<count($arr);$i++){
+		for($i = 0; $i<count($arr);$i++){
 			$min = $arr[$i];
-			for($j = $i-1;$j>=0;$j--){
+			for($j = $i;$j>=0;$j--){
 				if($arr[$j]>$min){
 					$arr[$j+1] = $arr[$j];
 					$arr[$j] = $min;
-					$swapped = true;
 				}
 			}
 
