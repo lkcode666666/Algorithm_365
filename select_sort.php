@@ -7,7 +7,7 @@
 		if(!is_array($arr)) return false;
 
 		for($i = 0; $i<count($arr); $i++){
-			$p = $i; //假设p为最大
+			$p = $i; //假设p为最小
 			for($j = $i+1;$j<count($arr);$j++){
 				if($arr[$j]<$arr[$p]){
 					$p = $j;
